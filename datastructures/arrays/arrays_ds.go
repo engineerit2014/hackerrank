@@ -1,7 +1,7 @@
 package arrays
 
 // Complete the reverseArray function below.
-func reverseArray(a []int32) []int32 {
+func ReverseArray(a []int32) []int32 {
 	var result []int32
 	size := len(a)
 

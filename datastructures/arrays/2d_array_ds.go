@@ -1,7 +1,7 @@
 package arrays
 
 // Complete the hourglassSum function below.
-func hourglassSum(arr [][]int32) int32 {
+func HourglassSum(arr [][]int32) int32 {
 	var r int32
 	var acc int32
 
