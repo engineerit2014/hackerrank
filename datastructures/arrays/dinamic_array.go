@@ -25,16 +25,15 @@ func DynamicArray(n int32, queries [][]int32) []int32 {
 	for i := 0; i < numQueries; i++ {
 		x := queries[i][1]
 		y := queries[i][2]
+		idx := (x ^ lastAnswer) % n
 
 		// query type 1
 		if queries[i][0] == 1 {
-			idx := (x ^ lastAnswer) % n
 			arr[idx] = append(arr[idx], y)
 		}
 
 		// query type 2
 		if queries[i][0] == 2 {
-			idx := (x ^ lastAnswer) % n
 			lastAnswer = arr[idx][y%int32(len(arr[idx]))]
 			result = append(result, lastAnswer)
 			fmt.Println(lastAnswer)
