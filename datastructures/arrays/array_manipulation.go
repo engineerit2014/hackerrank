@@ -5,7 +5,7 @@ func ArrayManipulation(n int32, queries [3][3]int32) int64 {
 	nIncluded := n + 1
 	result := make([]int64, nIncluded, nIncluded)
 
-	for i :=0; i< len(queries); i++ {
+	for i := 0; i < len(queries); i++ {
 		a := int64(queries[i][0])
 		b := int64(queries[i][1])
 		k := int64(queries[i][2])
