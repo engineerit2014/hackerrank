@@ -15,7 +15,7 @@ package queues
  * Output: Calculate the first point from where the truck will be able to complete the circle.
  * An integer which will be the smallest index of the petrol pump from which we can start the tour.
  */
-func TruckTourSolTrivial(petrolpumps [][]int32) int32 {
+func TruckTourSolIdeal(petrolpumps [][]int32) int32 {
 	idx := int32(-1)
 	accPetrol := int32(0)
 	currentPetrol := int32(0)
